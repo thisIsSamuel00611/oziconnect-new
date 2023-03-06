@@ -2,7 +2,32 @@
   border: 1px solid #f8550f;
 }
 
+::-moz-selection {
+  background-color: #f8550f;
+  color: #fff;
+  font-weight: bold;
+}
+
+::selection {
+  background-color: #f8550f;
+  color: #fff;
+  font-weight: bold;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  position: relative;
+  left: 0;
+  right: 0 !important;
+}
+
 body {
+  position: relative;
+  right: 0;
+  left: 0;
   font-family: calibri;
   font-size: 16px;
   font-weight: 400;
@@ -17,6 +42,9 @@ header {
   height: 70px;
   display: flex;
   align-items: center;
+}
+header .navbar {
+  padding: 10px 100px !important;
 }
 header .container-fluid .menubars:hover {
   cursor: pointer;
@@ -244,4 +272,82 @@ header .container-fluid .postjob .btn {
 }
 .popular .owl-carousel .item1 .caption h2 {
   font-size: 25px;
+}
+
+.services {
+  background-color: #f7f7f7;
+}
+.services .servicesBody {
+  padding: 80px 100px;
+}
+.services .servicesBody .title {
+  font-size: 30px;
+  font-family: calibri;
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+.services .servicesBody .col-lg-3 {
+  margin-bottom: 40px;
+  min-height: 425px;
+  height: 450px !important;
+}
+.services .servicesBody .products {
+  height: 100% !important;
+  height: 100%;
+}
+.services .servicesBody .products .card {
+  height: 100%;
+  background-color: rgba(226, 83, 22, 0.0823529412);
+}
+.services .servicesBody .products .card .card-header img {
+  width: 268px;
+  height: 201.41px;
+}
+.services .servicesBody .products .card .card-body {
+  border-bottom: 1px solid #ccc;
+}
+.services .servicesBody .products .card .card-body .profilePic {
+  padding: 15px 15px;
+  border-radius: 100%;
+  border: 1px solid #ccc;
+}
+.services .servicesBody .products .card .card-body .profiledesc {
+  font-size: 12px;
+}
+.services .servicesBody .products .card .card-body .productdesc {
+  display: flex;
+  font-size: 18px;
+  text-decoration: none !important;
+}
+.services .servicesBody .products .card .card-body .productvalue {
+  padding-top: 10px;
+}
+.services .servicesBody .products .card .card-body .productvalue .left i,
+.services .servicesBody .products .card .card-body .productvalue .left span {
+  color: #f8550f;
+}
+.services .servicesBody .products .card .card-body .productvalue .left > :last-child {
+  color: #aaa !important;
+}
+.services .servicesBody .products .card .card-body .productvalue .right .badge {
+  padding: 5px;
+  background-color: #f8550f;
+  color: #fff;
+}
+.services .servicesBody .products .card .card-footer {
+  background-color: transparent;
+}
+.services .servicesBody .products .card .card-footer .fa:hover {
+  cursor: pointer;
+}
+
+.footer {
+  padding: 100px !important;
+}
+.footer .title {
+  color: #212529;
+  font-size: 20px !important;
+  font-weight: 700;
+  padding-top: 10px;
+  margin-bottom: 10px;
 }/*# sourceMappingURL=styles.css.map */

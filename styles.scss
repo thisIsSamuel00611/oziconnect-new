@@ -1,9 +1,26 @@
 $primary: #f8550f;
 $secondary: #004f6d;
+$lightred: #e2531615;
 .border-primary {
   border: 1px solid $primary;
 }
+::selection {
+  background-color: $primary;
+  color: #fff;
+  font-weight: bold;
+}
+*{
+  box-sizing: border-box;
+}
+html{
+  position: relative;
+  left: 0;
+  right: 0 !important;
+}
 body {
+  position: relative;
+  right: 0;
+  left: 0;
   font-family: calibri;
   font-size: 16px;
   font-weight: 400;
@@ -18,6 +35,9 @@ header {
   display: flex;
   align-items: center;
   // border-bottom: 1px solid #00000015;
+  .navbar{
+    padding: 10px 100px !important;
+  }
   .container-fluid {
     // margin-left: 70px;
     // margin-right: 70px;
@@ -279,5 +299,90 @@ header {
         }
       }
     }
+  }
+}
+.services {
+  background-color: #f7f7f7;
+  .servicesBody {
+    padding: 80px 100px;
+    .title {
+      font-size: 30px;
+      font-family: calibri;
+      font-weight: 700;
+      margin-bottom: 60px;
+    }
+    .col-lg-3 {
+      margin-bottom: 40px;
+      min-height: 425px;
+      height: 450px !important;
+    }
+    .products {
+      height: 100% !important;
+      // margin-bottom: 10  0px !important;
+      height: 100%;
+      .card {
+        height: 100%;
+        background-color: $lightred;
+        .card-header {
+          img {
+            width: 268px;
+            height: 201.41px;
+          }
+        }
+        .card-body {
+          border-bottom: 1px solid #ccc;
+          .profilePic {
+            padding: 15px 15px;
+            border-radius: 100%;
+            border: 1px solid #ccc;
+          }
+          .profiledesc {
+            font-size: 12px;
+          }
+          .productdesc {
+            display: flex;
+            font-size: 18px;
+            text-decoration: none !important;
+          }
+          .productvalue {
+            padding-top: 10px;
+            .left {
+              i,
+              span {
+                color: $primary;
+              }
+              & > :last-child {
+                color: #aaa !important  ;
+              }
+            }
+            .right {
+              .badge {
+                padding: 5px;
+                background-color: $primary;
+                color: #fff;
+              }
+            }
+          }
+        }
+        .card-footer {
+          background-color: transparent;
+          .fa {
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.footer{
+  padding: 100px !important;
+  .title{
+    color: #212529;
+    font-size: 20px !important;
+    font-weight: 700;
+    padding-top: 10px;
+    margin-bottom: 10px;
   }
 }
